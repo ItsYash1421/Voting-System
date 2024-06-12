@@ -1,0 +1,129 @@
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Header Section */
+#headersection {
+    text-align: center;
+    background-size: cover;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    backdrop-filter: blur(5px); /* Optional: Blur effect */
+}
+
+#headersection h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for better text visibility */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#headersection hr {
+    border: 1px solid white;
+    width: 50%;
+    margin: 10px auto 0;
+}
+
+/* Body Section */
+#bodysection {
+    margin-top: 100px;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#bodysection h3 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #4a148c;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"],
+input[type="password"],
+select {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 30px);
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #4a148c;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: #4a148c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7b1fa2;
+}
+
+a {
+    color: #4a148c;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
